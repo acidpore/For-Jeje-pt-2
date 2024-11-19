@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>For Your Birthday</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">* So because i want to be a programmer so i thing i want to make this for you,</span><br />
+				<span class="space"/><span class="comments">* to celebrate your 17th Birthday.</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Wilson"</span>);<br />
+				Boy u = <span class="keyword">new</span> Boy(<span class="string">"Jession"</span>);<br />
+				<span class="comments">// 22 November, 2007, you are born to this world. </span><br />
+				u.born();<br />
+				<span class="comments">// And you live with your own way until now.</span><br />
+				u.live();<br />
+				<span class="comments">// You have gone through many challenges and problems in your life.</span><br />
+				u.surpassed();<br />
+				<span class="comments">// And I am very proud of you because you were able to get through all that.</span><br />
+				i.proud(u);<br />
+				<span class="comments">// then I met you, I can't lie that I fell in love immediately when I met you.</span><br />
+				<span class="comments">// The more I get to know you, the more I admire you, nothing can stop me from making you as my boyfriend.</span><br />
+				<span class="keyword">boolean</span> meet = <span class="keyword">true</span>;<br />
+				<span class="keyword">while</span> (challenges) {<br />
+				<span class="placeholder"/>we.together;<br />
+				<span class="placeholder"/><span class="comments">// I think it was the best decision of my life</span><br />
+				<span class="placeholder"/><span class="comments">// because you are an extraordinary child and no one will be able to surpass you.</span><br />
+				<span class="placeholder"/>decision = is.theBest();<br />
+				}<br />
+				<span class="comments">// I hope that on your this birthday everything will be more beautiful.</span><br />
+				u.birthday();<br />
+				everything.better(u);<br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Jession, I have fallen in love with you for
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">- Wilson</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">hackerzhou</a> project.<br />
+			Copyright © 2011 <a href='http://hackerzhou.me'>wilson.me</a> 2024-2025
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2023, 5, 28);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			const code = document.getElementById('code');
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
