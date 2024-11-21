@@ -35,13 +35,14 @@
   
         const photoUrls = [
           "./assets/photo1.jpg",
-          "/For-Jeje-pt-2/assets/photo2.jpg",
-          "/For-Jeje-pt-2/assets/photo3.jpg",
-          "/For-Jeje-pt-2/assets/photo4.jpg",
-          "/For-Jeje-pt-2/assets/photo5.jpg",
-          "/For-Jeje-pt-2/assets/photo6.jpg",
-          "/For-Jeje-pt-2/assets/photo7.jpg",
-          "/For-Jeje-pt-2/assets/photo8.jpg",
+          "./assets/photo2.jpg",
+          "./assets/photo3.jpg",
+          "./assets/photo4.jpg",
+          "./assets/photo5.jpg",
+          "./assets/photo6.jpg",
+          "./assets/photo7.jpg",
+          "./assets/photo8.jpg",
+            
         ];
   
         const randomPhotoUrl =
