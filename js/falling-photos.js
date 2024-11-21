@@ -29,12 +29,12 @@
   
         const left = getRandomValue(0, window.innerWidth);
         const size = getRandomValue(50, 150);
-        const animationDuration = getRandomValue(5, 10); // Reduced duration
+        const animationDuration = getRandomValue(5, 10); 
         const delay = getRandomValue(0, 5);
         const rotation = getRandomValue(-20, 20);
   
         const photoUrls = [
-          "/For-Jeje-pt-2/assets/photo1.jpg",
+          "./assets/photo1.jpg",
           "/For-Jeje-pt-2/assets/photo2.jpg",
           "/For-Jeje-pt-2/assets/photo3.jpg",
           "/For-Jeje-pt-2/assets/photo4.jpg",
