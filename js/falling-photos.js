@@ -35,8 +35,13 @@
   
         const photoUrls = [
           "./assets/photo1.jpg",
-          "path/to/photo2.jpg",
-          "path/to/photo3.jpg",
+          "./assets/photo2.jpg",
+          "./assets/photo3.jpg",
+          "./assets/photo4.jpg",
+          "./assets/photo5.jpg",
+          "./assets/photo6.jpg",
+          "./assets/photo7.jpg",
+          "./assets/photo8.jpg",
         ];
   
         const randomPhotoUrl =
